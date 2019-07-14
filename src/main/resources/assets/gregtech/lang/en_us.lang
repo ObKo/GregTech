@@ -986,6 +986,7 @@ material.vanadium=Vanadium
 material.ytterbium=Ytterbium
 material.yttrium=Yttrium
 material.zinc=Zinc
+material.boron_carbide=Boroncarbide
 
 material.construction_foam=Construction Foam
 material.bio_fuel=Biofuel
@@ -1689,6 +1690,10 @@ tile.boiler_casing.bronze_firebox.name=Bronze Firebox Casing
 tile.boiler_casing.steel_firebox.name=Steel Firebox Casing
 tile.boiler_casing.titanium_firebox.name=Titanium Firebox Casing
 tile.boiler_casing.tungstensteel_firebox.name=Tungstensteel Firebox Casing
+
+#Nuclear Control Rods
+tile.nuclear_control_rod.graphite_control_rod.name=Graphite Control Rod
+tile.nuclear_control_rod.boroncarbide_control_rod.name=Boroncarbide Control Rod
 
 # Metal casing blocks
 tile.metal_casing.primitive_bricks.name=Primitive Bricks

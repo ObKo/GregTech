@@ -89,6 +89,7 @@ public class MetaBlocks {
     public static BlockMultiblockCasing MUTLIBLOCK_CASING;
     public static BlockWireCoil WIRE_COIL;
     public static BlockWarningSign WARNING_SIGN;
+    public static BlockNuclearControlRod NUCLEAR_CONTROL_ROD;
 
     public static BlockGranite GRANITE;
     public static BlockMineral MINERAL;
@@ -139,6 +140,8 @@ public class MetaBlocks {
         GRANITE.setRegistryName("granite");
         MINERAL = new BlockMineral();
         MINERAL.setRegistryName("mineral");
+        NUCLEAR_CONTROL_ROD = new BlockNuclearControlRod();
+        NUCLEAR_CONTROL_ROD.setRegistryName("nuclear_control_rod");
 
         CONCRETE = new BlockConcrete();
         CONCRETE.setRegistryName("concrete");
@@ -293,6 +296,7 @@ public class MetaBlocks {
         registerItemModel(MUTLIBLOCK_CASING);
         registerItemModel(WIRE_COIL);
         registerItemModel(WARNING_SIGN);
+        registerItemModel(NUCLEAR_CONTROL_ROD);
         registerItemModel(GRANITE);
         registerItemModel(MINERAL);
         registerItemModel(CONCRETE);
