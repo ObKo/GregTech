@@ -71,6 +71,7 @@ public class CommonProxy {
         registry.register(WIRE_COIL);
         registry.register(WARNING_SIGN);
         registry.register(FISSION_CORE);
+        registry.register(FISSION_CONTROL);
         registry.register(GRANITE);
         registry.register(MINERAL);
         registry.register(CONCRETE);
@@ -118,6 +119,7 @@ public class CommonProxy {
         registry.register(createItemBlock(WIRE_COIL, VariantItemBlock::new));
         registry.register(createItemBlock(WARNING_SIGN, VariantItemBlock::new));
         registry.register(createItemBlock(FISSION_CORE, VariantItemBlock::new));
+        registry.register(createItemBlock(FISSION_CONTROL, VariantItemBlock::new));
         registry.register(createItemBlock(GRANITE, StoneItemBlock::new));
         registry.register(createItemBlock(MINERAL, StoneItemBlock::new));
         registry.register(createItemBlock(CONCRETE, StoneItemBlock::new));

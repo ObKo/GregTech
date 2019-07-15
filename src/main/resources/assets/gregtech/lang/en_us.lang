@@ -1695,6 +1695,10 @@ tile.boiler_casing.tungstensteel_firebox.name=Tungstensteel Firebox Casing
 tile.fission_core.bwr_fission_core.name=BWR Fission Reactor Core
 tile.fission_core.pwr_fission_core.name=PWR Fission Reactor Core
 
+#Fission Control
+tile.fission_control.bwr_fission_control.name=BWR Fission Reactor Control Block
+tile.fission_control.pwr_fission_control.name=PWR Fission Reactor Control Block
+
 # Metal casing blocks
 tile.metal_casing.primitive_bricks.name=Primitive Bricks
 tile.metal_casing.coke_bricks.name=Coke Oven Bricks

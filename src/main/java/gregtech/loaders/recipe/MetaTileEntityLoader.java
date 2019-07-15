@@ -25,6 +25,7 @@ import java.util.Arrays;
 import static gregtech.common.blocks.BlockBoilerCasing.BoilerCasingType.*;
 import static gregtech.common.blocks.BlockFireboxCasing.FireboxCasingType.*;
 import static gregtech.common.blocks.BlockFissionCore.FissionCoreType.*;
+import static gregtech.common.blocks.BlockFissionControl.FissionControlType.*;
 import static gregtech.common.blocks.BlockMachineCasing.MachineCasingType.*;
 import static gregtech.common.blocks.BlockMetalCasing.MetalCasingType.*;
 import static gregtech.common.blocks.BlockMultiblockCasing.MultiblockCasingType.ASSEMBLER_CASING;
@@ -74,6 +75,9 @@ public class MetaTileEntityLoader {
 
         ModHandler.addShapedRecipe("casing_bwr_fission_core", MetaBlocks.FISSION_CORE.getItemVariant(BWR_FISSION_CORE, 3), "PIP", "PRP", "PIP", 'P', new UnificationEntry(OrePrefix.plate, Materials.Graphite), 'I', new UnificationEntry(OrePrefix.pipeSmall, Materials.StainlessSteel), 'R', new UnificationEntry(OrePrefix.stick, Materials.BoronCarbide));
         ModHandler.addShapedRecipe("casing_pwr_fission_core", MetaBlocks.FISSION_CORE.getItemVariant(PWR_FISSION_CORE, 3), "PIP", "PRP", "PIP", 'P', new UnificationEntry(OrePrefix.plate, Materials.BoronCarbide), 'I', new UnificationEntry(OrePrefix.pipeSmall, Materials.Titanium), 'R', new UnificationEntry(OrePrefix.stick, Materials.BoronCarbide));
+
+        ModHandler.addShapedRecipe("casing_bwr_fission_control", MetaBlocks.FISSION_CONTROL.getItemVariant(BWR_FISSION_CONTROL, 1), "PCP", "MSA", "PIP", 'P', new UnificationEntry(OrePrefix.plateDense, Materials.Lead), 'C',  new UnificationEntry(OrePrefix.circuit, MarkerMaterials.Tier.Advanced), 'M',  MetaItems.ELECTRIC_MOTOR_HV, 'S', MetaTileEntities.HULL[GTValues.HV].getStackForm(), 'A',  MetaItems.ROBOT_ARM_HV, 'I', new UnificationEntry(OrePrefix.pipeSmall, Materials.StainlessSteel));
+        ModHandler.addShapedRecipe("casing_pwr_fission_control", MetaBlocks.FISSION_CONTROL.getItemVariant(PWR_FISSION_CONTROL, 1), "PCP", "MSA", "PIP", 'P', new UnificationEntry(OrePrefix.plateDense, Materials.Lead), 'C',  new UnificationEntry(OrePrefix.circuit, MarkerMaterials.Tier.Extreme), 'M',  MetaItems.ELECTRIC_MOTOR_EV, 'S', MetaTileEntities.HULL[GTValues.EV].getStackForm(), 'A',  MetaItems.ROBOT_ARM_EV, 'I', new UnificationEntry(OrePrefix.pipeSmall, Materials.Titanium));
 
         for (CoilType coilType : CoilType.values()) {
             if (coilType.getMaterial() != null) {

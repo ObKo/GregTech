@@ -67,6 +67,8 @@ public class Textures {
     public static SimpleCubeRenderer BWR_FISSION_CORE_ACTIVE = new SimpleCubeRenderer("casings/fission/bwr_fission_core_active");
     public static SimpleCubeRenderer PWR_FISSION_CORE = new SimpleCubeRenderer("casings/fission/bwr_fission_core");
     public static SimpleCubeRenderer PWR_FISSION_CORE_ACTIVE = new SimpleCubeRenderer("casings/fission/pwr_fission_core_active");
+    public static SimpleCubeRenderer BWR_FISSION_CONTROL = new SimpleCubeRenderer("casings/fission/bwr_fission_control");
+    public static SimpleCubeRenderer PWR_FISSION_CONTROL = new SimpleCubeRenderer("casings/fission/pwr_fission_control");
 
     public static SimpleSidedCubeRenderer TESLA_COIL = new SimpleSidedCubeRenderer("casings/tesla_coil");
 

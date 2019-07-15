@@ -58,8 +58,8 @@ public class BlockFissionCore extends VariantBlock<FissionCoreType> {
 
     public enum FissionCoreType implements IStringSerializable {
 
-        BWR_FISSION_CORE("pwr_fission_core"),
-        PWR_FISSION_CORE("bwr_fission_core");
+        BWR_FISSION_CORE("bwr_fission_core"),
+        PWR_FISSION_CORE("pwr_fission_core");
 
         private final String name;
 

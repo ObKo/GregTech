@@ -90,6 +90,7 @@ public class MetaBlocks {
     public static BlockWireCoil WIRE_COIL;
     public static BlockWarningSign WARNING_SIGN;
     public static BlockFissionCore FISSION_CORE;
+    public static BlockFissionControl FISSION_CONTROL;
 
     public static BlockGranite GRANITE;
     public static BlockMineral MINERAL;
@@ -142,6 +143,8 @@ public class MetaBlocks {
         MINERAL.setRegistryName("mineral");
         FISSION_CORE = new BlockFissionCore();
         FISSION_CORE.setRegistryName("fission_core");
+        FISSION_CONTROL = new BlockFissionControl();
+        FISSION_CONTROL.setRegistryName("fission_control");
 
         CONCRETE = new BlockConcrete();
         CONCRETE.setRegistryName("concrete");
@@ -297,6 +300,7 @@ public class MetaBlocks {
         registerItemModel(WIRE_COIL);
         registerItemModel(WARNING_SIGN);
         registerItemModel(FISSION_CORE);
+        registerItemModel(FISSION_CONTROL);
         registerItemModel(GRANITE);
         registerItemModel(MINERAL);
         registerItemModel(CONCRETE);
