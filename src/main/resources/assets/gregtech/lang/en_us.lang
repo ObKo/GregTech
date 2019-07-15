@@ -1691,9 +1691,9 @@ tile.boiler_casing.steel_firebox.name=Steel Firebox Casing
 tile.boiler_casing.titanium_firebox.name=Titanium Firebox Casing
 tile.boiler_casing.tungstensteel_firebox.name=Tungstensteel Firebox Casing
 
-#Nuclear Control Rods
-tile.nuclear_control_rod.graphite_control_rod.name=Graphite Control Rod
-tile.nuclear_control_rod.boroncarbide_control_rod.name=Boroncarbide Control Rod
+#Fission Cores
+tile.fission_core.bwr_fission_core.name=BWR Fission Reactor Core
+tile.fission_core.pwr_fission_core.name=PWR Fission Reactor Core
 
 # Metal casing blocks
 tile.metal_casing.primitive_bricks.name=Primitive Bricks

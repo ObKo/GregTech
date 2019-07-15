@@ -1,0 +1,50 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "minecraft:cube_bottom_top",
+    "textures": {
+      "bottom": "gregtech:blocks/rendering_error",
+      "top": "gregtech:blocks/rendering_error",
+      "side": "gregtech:blocks/rendering_error"
+    }
+  },
+  "variants": {
+    "active=false,variant=bwr_fission_core": [
+      {
+        "textures": {
+          "bottom": "gregtech:blocks/casings/fission/bwr_fission_core_top",
+          "top": "gregtech:blocks/casings/fission/bwr_fission_core_top",
+          "side": "gregtech:blocks/casings/fission/bwr_fission_core_side"
+        }
+      }
+    ],
+    "active=true,variant=bwr_fission_core": [
+      {
+        "textures": {
+          "bottom": "gregtech:blocks/casings/fission/bwr_fission_core_top_active",
+          "top": "gregtech:blocks/casings/fission/bwr_fission_core_top_active",
+          "side": "gregtech:blocks/casings/fission/bwr_fission_core_side"
+        }
+      }
+    ],
+
+    "active=false,variant=pwr_fission_core": [
+      {
+        "textures": {
+          "bottom": "gregtech:blocks/casings/fission/pwr_fission_core_top",
+          "top": "gregtech:blocks/casings/fission/pwr_fission_core_top",
+          "side": "gregtech:blocks/casings/fission/pwr_fission_core_side"
+        }
+      }
+    ],
+    "active=true,variant=pwr_fission_core": [
+      {
+        "textures": {
+          "bottom": "gregtech:blocks/casings/fission/pwr_fission_core_top_active",
+          "top": "gregtech:blocks/casings/fission/pwr_fission_core_top_active",
+          "side": "gregtech:blocks/casings/fission/pwr_fission_core_side"
+        }
+      }
+    ]
+  }
+}

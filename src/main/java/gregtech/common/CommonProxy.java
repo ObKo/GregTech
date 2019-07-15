@@ -70,7 +70,7 @@ public class CommonProxy {
         registry.register(MUTLIBLOCK_CASING);
         registry.register(WIRE_COIL);
         registry.register(WARNING_SIGN);
-        registry.register(NUCLEAR_CONTROL_ROD);
+        registry.register(FISSION_CORE);
         registry.register(GRANITE);
         registry.register(MINERAL);
         registry.register(CONCRETE);
@@ -117,7 +117,7 @@ public class CommonProxy {
         registry.register(createItemBlock(MUTLIBLOCK_CASING, VariantItemBlock::new));
         registry.register(createItemBlock(WIRE_COIL, VariantItemBlock::new));
         registry.register(createItemBlock(WARNING_SIGN, VariantItemBlock::new));
-        registry.register(createItemBlock(NUCLEAR_CONTROL_ROD, VariantItemBlock::new));
+        registry.register(createItemBlock(FISSION_CORE, VariantItemBlock::new));
         registry.register(createItemBlock(GRANITE, StoneItemBlock::new));
         registry.register(createItemBlock(MINERAL, StoneItemBlock::new));
         registry.register(createItemBlock(CONCRETE, StoneItemBlock::new));

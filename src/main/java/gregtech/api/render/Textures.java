@@ -63,10 +63,10 @@ public class Textures {
     public static SimpleCubeRenderer TITANIUM_FIREBOX_ACTIVE = new SimpleCubeRenderer("casings/firebox/machine_casing_firebox_titanium_active");
     public static SimpleCubeRenderer TUNGSTENSTEEL_FIREBOX = new SimpleCubeRenderer("casings/firebox/machine_casing_firebox_tungstensteel");
     public static SimpleCubeRenderer TUNGSTENSTEEL_FIREBOX_ACTIVE = new SimpleCubeRenderer("casings/firebox/machine_casing_firebox_tungstensteel_active");
-    public static SimpleCubeRenderer GRAPHITE_CONTROL_ROD = new SimpleCubeRenderer("casings/firebox/machine_casing_firebox_bronze");
-    public static SimpleCubeRenderer GRAPHITE_CONTROL_ROD_ACTIVE = new SimpleCubeRenderer("casings/firebox/machine_casing_firebox_bronze_active");
-    public static SimpleCubeRenderer BORON_CARBIDE_CONTROL_ROD = new SimpleCubeRenderer("casings/firebox/machine_casing_firebox_steel");
-    public static SimpleCubeRenderer BORON_CARBIDE_CONTROL_ROD_ACTIVE = new SimpleCubeRenderer("casings/firebox/machine_casing_firebox_steel_active");
+    public static SimpleCubeRenderer BWR_FISSION_CORE = new SimpleCubeRenderer("casings/fission/bwr_fission_core");
+    public static SimpleCubeRenderer BWR_FISSION_CORE_ACTIVE = new SimpleCubeRenderer("casings/fission/bwr_fission_core_active");
+    public static SimpleCubeRenderer PWR_FISSION_CORE = new SimpleCubeRenderer("casings/fission/bwr_fission_core");
+    public static SimpleCubeRenderer PWR_FISSION_CORE_ACTIVE = new SimpleCubeRenderer("casings/fission/pwr_fission_core_active");
 
     public static SimpleSidedCubeRenderer TESLA_COIL = new SimpleSidedCubeRenderer("casings/tesla_coil");
 

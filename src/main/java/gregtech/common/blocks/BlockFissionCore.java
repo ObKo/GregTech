@@ -1,6 +1,6 @@
 package gregtech.common.blocks;
 
-import gregtech.common.blocks.BlockNuclearControlRod.NuclearControlRodType;
+import gregtech.common.blocks.BlockFissionCore.FissionCoreType;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyBool;
@@ -11,18 +11,18 @@ import net.minecraft.util.IStringSerializable;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
-public class BlockNuclearControlRod extends VariantBlock<NuclearControlRodType> {
+public class BlockFissionCore extends VariantBlock<FissionCoreType> {
 
     public static final PropertyBool ACTIVE = PropertyBool.create("active");
 
-    public BlockNuclearControlRod() {
+    public BlockFissionCore() {
         super(Material.IRON);
-        setUnlocalizedName("nuclear_control_rod");
+        setUnlocalizedName("fission_core");
         setHardness(5.0f);
         setResistance(10.0f);
         setSoundType(SoundType.METAL);
         setHarvestLevel("wrench", 2);
-        setDefaultState(getState(NuclearControlRodType.GRAPHITE_CONTROL_ROD).withProperty(ACTIVE, false));
+        setDefaultState(getState(FissionCoreType.BWR_FISSION_CORE).withProperty(ACTIVE, false));
     }
 
     @Override
@@ -56,14 +56,14 @@ public class BlockNuclearControlRod extends VariantBlock<NuclearControlRodType> 
         return false;
     }
 
-    public enum NuclearControlRodType implements IStringSerializable {
+    public enum FissionCoreType implements IStringSerializable {
 
-        GRAPHITE_CONTROL_ROD("graphite_control_rod"),
-        BORON_CARBIDE_CONTROL_ROD("boroncarbide_control_rod");
+        BWR_FISSION_CORE("pwr_fission_core"),
+        PWR_FISSION_CORE("bwr_fission_core");
 
         private final String name;
 
-        NuclearControlRodType(String name) {
+        FissionCoreType(String name) {
             this.name = name;
         }
 

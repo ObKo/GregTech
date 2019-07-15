@@ -24,7 +24,7 @@ import java.util.Arrays;
 
 import static gregtech.common.blocks.BlockBoilerCasing.BoilerCasingType.*;
 import static gregtech.common.blocks.BlockFireboxCasing.FireboxCasingType.*;
-import static gregtech.common.blocks.BlockNuclearControlRod.NuclearControlRodType.*;
+import static gregtech.common.blocks.BlockFissionCore.FissionCoreType.*;
 import static gregtech.common.blocks.BlockMachineCasing.MachineCasingType.*;
 import static gregtech.common.blocks.BlockMetalCasing.MetalCasingType.*;
 import static gregtech.common.blocks.BlockMultiblockCasing.MultiblockCasingType.ASSEMBLER_CASING;
@@ -72,8 +72,8 @@ public class MetaTileEntityLoader {
         ModHandler.addShapedRecipe("casing_titanium_firebox", MetaBlocks.BOILER_FIREBOX_CASING.getItemVariant(TITANIUM_FIREBOX, 3), "PSP", "SFS", "PSP", 'P', new UnificationEntry(OrePrefix.plate, Materials.Titanium), 'F', new UnificationEntry(OrePrefix.frameGt, Materials.Titanium), 'S', new UnificationEntry(OrePrefix.stick, Materials.Titanium));
         ModHandler.addShapedRecipe("casing_tungstensteel_firebox", MetaBlocks.BOILER_FIREBOX_CASING.getItemVariant(TUNGSTENSTEEL_FIREBOX, 3), "PSP", "SFS", "PSP", 'P', new UnificationEntry(OrePrefix.plate, Materials.TungstenSteel), 'F', new UnificationEntry(OrePrefix.frameGt, Materials.TungstenSteel), 'S', new UnificationEntry(OrePrefix.stick, Materials.TungstenSteel));
 
-        ModHandler.addShapedRecipe("casing_graphite_control_rod", MetaBlocks.NUCLEAR_CONTROL_ROD.getItemVariant(GRAPHITE_CONTROL_ROD, 3), "PSP", "SFS", "PSP", 'P', new UnificationEntry(OrePrefix.plate, Materials.Graphite), 'F', new UnificationEntry(OrePrefix.frameGt, Materials.StainlessSteel), 'S', new UnificationEntry(OrePrefix.stick, Materials.StainlessSteel));
-        ModHandler.addShapedRecipe("casing_graphite_control_rod", MetaBlocks.NUCLEAR_CONTROL_ROD.getItemVariant(BORON_CARBIDE_CONTROL_ROD, 3), "PSP", "SFS", "PSP", 'P', new UnificationEntry(OrePrefix.plate, Materials.BoronCarbide), 'F', new UnificationEntry(OrePrefix.frameGt, Materials.Titanium), 'S', new UnificationEntry(OrePrefix.stick, Materials.Titanium));
+        ModHandler.addShapedRecipe("casing_bwr_fission_core", MetaBlocks.FISSION_CORE.getItemVariant(BWR_FISSION_CORE, 3), "PIP", "PRP", "PIP", 'P', new UnificationEntry(OrePrefix.plate, Materials.Graphite), 'I', new UnificationEntry(OrePrefix.pipeSmall, Materials.StainlessSteel), 'R', new UnificationEntry(OrePrefix.stick, Materials.BoronCarbide));
+        ModHandler.addShapedRecipe("casing_pwr_fission_core", MetaBlocks.FISSION_CORE.getItemVariant(PWR_FISSION_CORE, 3), "PIP", "PRP", "PIP", 'P', new UnificationEntry(OrePrefix.plate, Materials.BoronCarbide), 'I', new UnificationEntry(OrePrefix.pipeSmall, Materials.Titanium), 'R', new UnificationEntry(OrePrefix.stick, Materials.BoronCarbide));
 
         for (CoilType coilType : CoilType.values()) {
             if (coilType.getMaterial() != null) {
