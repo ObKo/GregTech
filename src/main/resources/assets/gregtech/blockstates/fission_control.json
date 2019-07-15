@@ -13,7 +13,7 @@
       {
         "textures": {
           "bottom": "gregtech:blocks/casings/solid/machine_casing_clean_stainless_steel",
-          "top": "gregtech:blocks/casings/fission/bwr_fission_control",
+          "top": "gregtech:blocks/multiblock/fission/bwr_fission_control",
           "side": "gregtech:blocks/casings/solid/machine_casing_clean_stainless_steel"
         }
       }
@@ -22,7 +22,7 @@
       {
         "textures": {
           "bottom": "gregtech:blocks/casings/solid/machine_casing_stable_titanium",
-          "top": "gregtech:blocks/casings/fission/pwr_fission_control",
+          "top": "gregtech:blocks/multiblock/fission/pwr_fission_control",
           "side": "gregtech:blocks/casings/solid/machine_casing_stable_titanium"
         }
       }

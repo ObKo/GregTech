@@ -12,9 +12,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
 public class BlockFissionCore extends VariantBlock<FissionCoreType> {
-
-    public static final PropertyBool ACTIVE = PropertyBool.create("active");
-
     public BlockFissionCore() {
         super(Material.IRON);
         setUnlocalizedName("fission_core");
@@ -22,34 +19,11 @@ public class BlockFissionCore extends VariantBlock<FissionCoreType> {
         setResistance(10.0f);
         setSoundType(SoundType.METAL);
         setHarvestLevel("wrench", 2);
-        setDefaultState(getState(FissionCoreType.BWR_FISSION_CORE).withProperty(ACTIVE, false));
+        setDefaultState(getState(FissionCoreType.BWR_FISSION_CORE));
     }
 
     @Override
-    public int getLightValue(IBlockState state, IBlockAccess world, BlockPos pos) {
-        return state.getValue(ACTIVE) ? 15 : 0;
-    }
-
-    @Override
-    protected BlockStateContainer createBlockState() {
-        super.createBlockState();
-        return new BlockStateContainer(this, VARIANT, ACTIVE);
-    }
-
-    @Override
-    public IBlockState getStateFromMeta(int meta) {
-        return super.getStateFromMeta(meta % 8).withProperty(ACTIVE, meta / 8 >= 1);
-    }
-
-    @Override
-    public int getMetaFromState(IBlockState state) {
-        return super.getMetaFromState(state) + (state.getValue(ACTIVE) ? 8 : 0);
-    }
-
-    @Override
-    public int damageDropped(IBlockState state) {
-        return super.getMetaFromState(state);
-    }
+    public int damageDropped(IBlockState state) { return super.getMetaFromState(state); }
 
     @Override
     public boolean canCreatureSpawn(IBlockState state, IBlockAccess world, BlockPos pos, SpawnPlacementType type) {

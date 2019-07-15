@@ -127,6 +127,10 @@ public abstract class MultiblockControllerBase extends MetaTileEntity {
         return BlockWorldState.wrap(tilePredicate((state, tile) -> tile.metaTileEntityId.equals(metaTileEntityId)));
     }
 
+    public Predicate<BlockWorldState> anyPredicate() {
+        return blockWorldState -> true;
+    }
+
     public Predicate<BlockWorldState> countMatch(String key, Predicate<BlockWorldState> original) {
         return blockWorldState -> {
             if (original.test(blockWorldState)) {

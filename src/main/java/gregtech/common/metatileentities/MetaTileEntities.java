@@ -13,11 +13,8 @@ import gregtech.common.metatileentities.electric.multiblockpart.MetaTileEntityEn
 import gregtech.common.metatileentities.electric.multiblockpart.MetaTileEntityFluidHatch;
 import gregtech.common.metatileentities.electric.multiblockpart.MetaTileEntityItemBus;
 import gregtech.common.metatileentities.electric.multiblockpart.MetaTileEntityRotorHolder;
-import gregtech.common.metatileentities.multi.MetaTileEntityCokeOven;
-import gregtech.common.metatileentities.multi.MetaTileEntityCokeOvenHatch;
-import gregtech.common.metatileentities.multi.MetaTileEntityLargeBoiler;
+import gregtech.common.metatileentities.multi.*;
 import gregtech.common.metatileentities.multi.MetaTileEntityLargeBoiler.BoilerType;
-import gregtech.common.metatileentities.multi.MetaTileEntityPrimitiveBlastFurnace;
 import gregtech.common.metatileentities.multi.electric.*;
 import gregtech.common.metatileentities.multi.electric.generator.MetaTileEntityDieselEngine;
 import gregtech.common.metatileentities.multi.electric.generator.MetaTileEntityLargeTurbine;
@@ -30,6 +27,7 @@ import gregtech.common.metatileentities.storage.MetaTileEntityChest;
 import gregtech.common.metatileentities.storage.MetaTileEntityQuantumChest;
 import gregtech.common.metatileentities.storage.MetaTileEntityQuantumTank;
 import gregtech.common.metatileentities.storage.MetaTileEntityTank;
+import gregtech.common.metatileentities.multi.MetaTileEntityFission.FissionType;
 import net.minecraft.util.ResourceLocation;
 
 @SuppressWarnings("WeakerAccess")
@@ -163,6 +161,9 @@ public class MetaTileEntities {
     public static MetaTileEntityQuantumChest[] QUANTUM_CHEST = new MetaTileEntityQuantumChest[4];
     public static MetaTileEntityQuantumTank[] QUANTUM_TANK = new MetaTileEntityQuantumTank[4];
     public static MetaTileEntityFisher[] FISHER = new MetaTileEntityFisher[4];
+
+    public static MetaTileEntityFission FISSION_BWR;
+    public static MetaTileEntityFission FISSION_PWR;
 
     public static void init() {
         GTLog.logger.info("Registering MetaTileEntities");
@@ -436,6 +437,9 @@ public class MetaTileEntities {
 
         COKE_OVEN = GregTechAPI.registerMetaTileEntity(526, new MetaTileEntityCokeOven(gregtechId("coke_oven")));
         COKE_OVEN_HATCH = GregTechAPI.registerMetaTileEntity(527, new MetaTileEntityCokeOvenHatch(gregtechId("coke_oven_hatch")));
+
+        FISSION_BWR = GregTechAPI.registerMetaTileEntity(528, new MetaTileEntityFission(gregtechId("fission.bwr"), FissionType.BWR));
+        FISSION_PWR = GregTechAPI.registerMetaTileEntity(529, new MetaTileEntityFission(gregtechId("fission.pwr"), FissionType.PWR));
 
         int[] batteryBufferSlots = new int[]{1, 4, 9, 16};
         for (int i = 0; i < GTValues.V.length; i++) {

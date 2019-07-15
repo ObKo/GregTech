@@ -1691,13 +1691,13 @@ tile.boiler_casing.steel_firebox.name=Steel Firebox Casing
 tile.boiler_casing.titanium_firebox.name=Titanium Firebox Casing
 tile.boiler_casing.tungstensteel_firebox.name=Tungstensteel Firebox Casing
 
-#Fission Cores
-tile.fission_core.bwr_fission_core.name=BWR Fission Reactor Core
-tile.fission_core.pwr_fission_core.name=PWR Fission Reactor Core
-
-#Fission Control
-tile.fission_control.bwr_fission_control.name=BWR Fission Reactor Control Block
-tile.fission_control.pwr_fission_control.name=PWR Fission Reactor Control Block
+#Fission
+tile.fission_core.bwr_fission_core.name=Boiling Water Fission Reactor (BWR) Core
+tile.fission_core.pwr_fission_core.name=Pressurized Water Fission Reactor (PWR) Core
+tile.fission_control.bwr_fission_control.name=Boiling Water Fission Reactor (BWR) Control Block
+tile.fission_control.pwr_fission_control.name=Pressurized Water Fission Reactor (PWR) Control Block
+gregtech.machine.fission.bwr.name=Boiling Water Fission Reactor (BWR)
+gregtech.machine.fission.pwr.name=Pressurized Water Fission Reactor (PWR)
 
 # Metal casing blocks
 tile.metal_casing.primitive_bricks.name=Primitive Bricks
@@ -2945,3 +2945,7 @@ gregtech.command.util.hand.material_meta_item=Ore Prefix: %s; Material: %s
 gregtech.command.util.hand.tool_stats=Tool Stats Class: %s
 gregtech.command.util.hand.meta_item=Meta Item Name: %s
 gregtech.command.util.hand.not_a_player=This command is only usable by a player.
+
+gregtech.multiblock.fission.fuel_left=Fuel: %s%% left
+gregtech.multiblock.fission.temperature=Core Temperature: %s / %s C
+gregtech.multiblock.fission.steam_output=Steam Output: %s mb/t
