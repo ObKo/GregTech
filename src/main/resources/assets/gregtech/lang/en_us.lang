@@ -2936,3 +2936,6 @@ gregtech.command.util.hand.material_meta_item=Ore Prefix: %s; Material: %s
 gregtech.command.util.hand.tool_stats=Tool Stats Class: %s
 gregtech.command.util.hand.meta_item=Meta Item Name: %s
 gregtech.command.util.hand.not_a_player=This command is only usable by a player.
+
+gregtech.machine.fission_reactor.name=Nuclear Fission Reactor
+gregtech.multiblock.fission_reactor.size=Reactor core size: %dx%dx%d
