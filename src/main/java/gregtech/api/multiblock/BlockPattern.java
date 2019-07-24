@@ -97,6 +97,7 @@ public class BlockPattern {
         int[] countMatchesCache = new int[countMatches.length];
         boolean findFirstAisle = false;
         int minZ = -centerOffset[4];
+        int realFingerLength = 0;
 
         this.matchContext.reset();
         this.layerContext.reset();
@@ -119,7 +120,7 @@ public class BlockPattern {
                         if (!predicate.test(worldState)) {
                             if (findFirstAisle) {
                                 if (r < aisleRepetitions[c][0]) {//retreat to see if the first aisle can start later
-                                    r = c = 0;
+                                    r = c = realFingerLength = 0;
                                     z = minZ++;
                                     matchContext.reset();
                                     findFirstAisle = false;
@@ -138,6 +139,7 @@ public class BlockPattern {
                 }
                 findFirstAisle = true;
                 z++;
+                realFingerLength++;
 
                 //Check layer-local matcher predicate
                 Predicate<PatternMatchContext> layerPredicate = layerMatchers.get(c);
@@ -165,6 +167,10 @@ public class BlockPattern {
                 return null;
             }
         }
+
+        matchContext.set("palmLength", palmLength);
+        matchContext.set("thumbLength", thumbLength);
+        matchContext.set("fingerLength", realFingerLength);
 
         return matchContext;
     }
